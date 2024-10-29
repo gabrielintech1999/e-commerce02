@@ -4,10 +4,10 @@ interface ProductProps {
     title: string;
     image: string;
     price: number;
-    rating: number
+    rating?: number;
 }
 
-export default function Product({title, image, price, rating}: ProductProps) {
+export default function Product({title, image, price}: ProductProps) {
 
 
   return (

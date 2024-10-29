@@ -2,7 +2,7 @@
 // import HomeIcon from '@mui/icons-material/Home';
 // import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Logo from "../assets/amazon.png";
-import { useCart } from "../context/cartContext";
+// import { useCart } from "../context/cartContext";
 
 
 

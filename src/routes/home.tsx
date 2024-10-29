@@ -2,8 +2,17 @@ import { useEffect, useState } from "react";
 import Banner from "../components/Banner";
 import Product from "../components/Product";
 
+interface Product {
+  id: number;
+  title: string;
+  image: string;
+  price: number;
+  rating: number;
+}
+
+
 export default function Home() {
-  const [products, setProducts] = useState<any>([])
+  const [products, setProducts] = useState<Product[]>([])
 
   console.log(products);
 
@@ -35,13 +44,12 @@ export default function Home() {
     <main className="m-auto max-w-[1200px]" >
       <Banner />
       <div className="flex flex-wrap gap-4 ">
-      {products.map((product: any) => (
+      {products.map((product) => (
         <Product
           key={product.id}
           title={product.title}
           image={product.image}
           price={product.price}
-          rating={product.rating}
         />
       ))}
       </div>
